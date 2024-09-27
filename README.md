@@ -15,7 +15,7 @@ Siga estes passos para executar a API localmente:
 ### 1. Clonar o Repositório
 
 ```bash
-git clone https://github.com/seuusuario/SpringAPI-Faculdade.git
+git clone https://github.com/Ruaney/SpringAPI-Faculdade.git
 cd SpringAPI-Faculdade
 ```
 
