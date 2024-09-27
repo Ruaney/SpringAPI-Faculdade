@@ -11,27 +11,23 @@ Para executar este projeto, você precisará das seguintes ferramentas instalada
 ## Passo a Passo para Execução Local
 
 Siga estes passos para executar a API localmente:
+## Execução da API usando Docker Hub
 
-### 1. Clonar o Repositório
+Se você preferir executar a API diretamente do Docker Hub:
 
-```bash
-git clone https://github.com/Ruaney/SpringAPI-Faculdade.git
-cd SpringAPI-Faculdade
-```
-
-### 2. Construir a Imagem Docker
+### 1. Puxar a Imagem Docker
 
 ```bash
-docker build -t springapi-faculdade .
+docker pull eurru/springapi-faculdade:latest
 ```
 
-### 3. Executar a API usando Docker
+### 2. Executar a API usando Docker
 
 ```bash
-docker run -d -p 8080:8080 springapi-faculdade
+docker run -d -p 8080:8080 eurru/springapi-faculdade
 ```
 
-A API deve estar rodando e acessível em `http://localhost:8080`.
+A API estará acessível em `http://localhost:8080`.
 
 ## Consumo da API com Postman
 
@@ -57,24 +53,6 @@ Para executar um teste:
 1. Selecione a requisição desejada da coleção
 2. Clique no botão "Enviar"
 3. Veja a resposta no painel inferior
-
-## Execução da API usando Docker Hub
-
-Se você preferir executar a API diretamente do Docker Hub:
-
-### 1. Puxar a Imagem Docker
-
-```bash
-docker pull eurru/springapi-faculdade:latest
-```
-
-### 2. Executar a API usando Docker
-
-```bash
-docker run -d -p 8080:8080 eurru/springapi-faculdade
-```
-
-A API estará acessível em `http://localhost:8080`.
 
 ## Endpoints da API
 
@@ -105,3 +83,24 @@ A API estará acessível em `http://localhost:8080`.
 - **Corpo da Requisição**: JSON representando o cliente.
 
 ---
+
+### 1. Clonar o Repositório
+
+```bash
+git clone https://github.com/Ruaney/SpringAPI-Faculdade.git
+cd SpringAPI-Faculdade
+```
+
+### 2. Construir a Imagem Docker
+
+```bash
+docker build -t springapi-faculdade .
+```
+
+### 3. Executar a API usando Docker
+
+```bash
+docker run -d -p 8080:8080 springapi-faculdade
+```
+
+A API deve estar rodando e acessível em `http://localhost:8080`.
