@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "6c400340-fe45-4889-9ee7-936e6c9aed2b",
+		"name": "API Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "38653017"
+	},
+	"item": [
+		{
+			"name": "Create Pedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"cliente\": {\"id\":1},\n  \"itens\": [\n    {\n      \"id\": 1,\n      \"nome\": \"Pizza\",\n      \"quantidade\": 1,\n      \"valorUnitario\": 20.0,\n      \"tipo\": \"Alimentação\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/pedidos"
+			},
+			"response": []
+		},
+		{
+			"name": "Processar Descontos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/pedidos/1/processar-descontos"
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Pedido",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8080/pedidos/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Teste\",\n    \"tipo\": \"Ouro\",\n    \"fidelidade\": \"150\",\n    \"logradouro\": \"Rua A\",\n    \"bairro\":\"Centro\",\n    \"cidade\": \"cariacica\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/clientes"
+			},
+			"response": []
+		}
+	]
+}
