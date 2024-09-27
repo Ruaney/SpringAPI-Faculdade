@@ -1,5 +1,5 @@
 # SpringAPI-Faculdade
-
+grupo: Ruaney, Rauni e Bernardo
 ## Requisitos de Ambiente
 
 Para executar este projeto, você precisará das seguintes ferramentas instaladas no seu sistema:
