@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Main<PedidoTaxaEntrega>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "ufes.br.pedido.Main",
+            "projectName": "PedidoTaxaEntrega",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
