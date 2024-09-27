@@ -65,13 +65,13 @@ Se você preferir executar a API diretamente do Docker Hub:
 ### 1. Puxar a Imagem Docker
 
 ```bash
-docker pull seuusuario/springapi-faculdade:latest
+docker pull eurru/springapi-faculdade:latest
 ```
 
 ### 2. Executar a API usando Docker
 
 ```bash
-docker run -d -p 8080:8080 seuusuario/springapi-faculdade
+docker run -d -p 8080:8080 eurru/springapi-faculdade
 ```
 
 A API estará acessível em `http://localhost:8080`.
