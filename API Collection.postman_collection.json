@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "Create Pedido",
+			"name": "2-Create Pedido",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -25,7 +25,7 @@
 			"response": []
 		},
 		{
-			"name": "Processar Descontos",
+			"name": "3-Processar Descontos",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -34,7 +34,7 @@
 			"response": []
 		},
 		{
-			"name": "Consultar Pedido",
+			"name": "4-Consultar Pedido",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -49,7 +49,7 @@
 			"response": []
 		},
 		{
-			"name": "Cadastrar Cliente",
+			"name": "1-Cadastrar Cliente",
 			"request": {
 				"method": "POST",
 				"header": [],
